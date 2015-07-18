@@ -1,0 +1,10 @@
+{
+    "user": {
+        // Manually apply these settings.
+        "mark_style": "fill",
+        "no_column_highlights_line": true,
+        "syntax_map": {
+            "python3": "python"
+        }
+    }
+}
