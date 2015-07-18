@@ -1,0 +1,16 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "forin": true,
+  "futurehostile": true,
+  "latedef": true,
+  "nocomma": true,
+  "nonew": true,
+  "singleGroups": true,
+  "strict": true,
+  "undef": true,
+  "unused": true,
+  // Global variables:
+  "browser": true,
+  "jquery": true
+}
