@@ -1,4 +1,4 @@
-"""Local settings file."""
+"""Local django settings file based on Django 1.9 settings."""
 
 from .base import *
 
@@ -10,16 +10,18 @@ from .base import *
 #
 ########################################################################
 
-INSTALLED_APPS += (
+# Django debug toolbar wno't show up if IP not listed here,
+INTERNAL_IPS = ['127.0.0.1', '192.168.0.x']
+
+INSTALLED_APPS.extend([
     'debug_toolbar',
     'debug_panel',
-    'template_timings_panel',
+    # DISABLED FOR 1.9 COMPATIBILITY: 'template_timings_panel',
     'template_profiler_panel',
-)
+    'loginas',
+])
 
-MIDDLEWARE_CLASSES += (
-    'debug_panel.middleware.DebugPanelMiddleware',
-)
+MIDDLEWARE_CLASSES.append('debug_panel.middleware.DebugPanelMiddleware')
 
 ########################################################################
 #
@@ -41,8 +43,8 @@ DEBUG_TOOLBAR_PANELS = [
     'debug_toolbar.panels.logging.LoggingPanel',
     'debug_toolbar.panels.redirects.RedirectsPanel',
     # Extra
-    'debug_toolbar.panels.profiling.ProfilingPanel',
+    # 'debug_toolbar.panels.profiling.ProfilingPanel',
     # Contrib
-    'template_timings_panel.panels.TemplateTimings.TemplateTimings',
+    # DISABLED FOR 1.9 COMPATIBILITY: 'template_timings_panel.panels.TemplateTimings.TemplateTimings',
     'template_profiler_panel.panels.template.TemplateProfilerPanel',
 ]
