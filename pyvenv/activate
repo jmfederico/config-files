@@ -18,3 +18,7 @@ export DEBUG='1'
 
 export BASE_HOST='localhost'
 # export AN_OPTIONAL_VARIABLE='which is not set, because it is optional'
+
+clean_pip() {
+    pip freeze | grep -v "^-e" | xargs pip uninstall -y
+}
