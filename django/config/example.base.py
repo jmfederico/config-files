@@ -49,7 +49,7 @@ BASE_HOST = env_vars['BASE_HOST']
 ########################################################################
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(env_vars['DEBUG'])
+DEBUG = env_vars['DEBUG'] in [True, "1", "True"]
 
 ########################################################################
 #
