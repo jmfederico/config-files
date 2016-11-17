@@ -1,3 +1,4 @@
+# ~/.config/pylintrc
 [MESSAGES CONTROL]
 disable = locally-disabled,E1101,R0903,C0112,C0111,R0901
 max-line-length = 119

@@ -1,2 +1,3 @@
+# ~/.config/pycodestyle
 [pycodestyle]
 max-line-length = 119
