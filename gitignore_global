@@ -1,17 +1,15 @@
 # ~/.gitignore_global
 # git config --global core.excludesfile ~/.gitignore_global
 
+# Created by https://www.gitignore.io/api/macos
 
-# Created by https://www.gitignore.io/api/osx
-
-### OSX ###
+### macOS ###
 *.DS_Store
 .AppleDouble
 .LSOverride
 
 # Icon must end with two \r
 Icon
-
 
 # Thumbnails
 ._*
@@ -32,7 +30,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-# End of https://www.gitignore.io/api/osx
+# End of https://www.gitignore.io/api/macos
 
 # Custom ignores
 .dpl
