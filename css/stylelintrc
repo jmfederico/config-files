@@ -1,4 +1,7 @@
 # ~/.stylelintrc
 {
-  "extends": "/usr/local/lib/node_modules/stylelint-config-standard"
+  "extends": "/usr/local/lib/node_modules/stylelint-config-standard",
+  "rules": {
+    "string-quotes": "single"
+  }
 }
