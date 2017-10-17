@@ -1,0 +1,15 @@
+# Python3 development tools
+
+python-language-server
+
+# Code formatting
+isort
+yapf
+
+# Linters
+flake8-docstrings
+
+# Helpers
+pipdeptree
+invoke
+pip-tools
