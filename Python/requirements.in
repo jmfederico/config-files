@@ -6,6 +6,7 @@ yapf
 
 # Linters and IDE
 python-language-server
+flake8
 
 # Helpers
 pipdeptree
