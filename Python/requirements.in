@@ -12,3 +12,4 @@ flake8
 pipdeptree
 invoke
 pip-tools
+cookiecutter

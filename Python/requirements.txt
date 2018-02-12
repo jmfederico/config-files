@@ -4,25 +4,39 @@
 #
 #    pip-compile --output-file requirements.txt requirements.in
 #
-click==6.7                # via pip-tools
+arrow==0.12.1             # via jinja2-time
+binaryornot==0.4.4        # via cookiecutter
+certifi==2018.1.18        # via requests
+chardet==3.0.4            # via binaryornot, requests
+click==6.7                # via cookiecutter, pip-tools
 configparser==3.5.0       # via python-language-server
+cookiecutter==1.6.0
 first==2.0.1              # via pip-tools
 flake8==3.5.0
-future==0.16.0            # via python-language-server
-invoke==0.21.0
-isort==4.2.15
-jedi==0.11.0              # via python-language-server
+future==0.16.0            # via cookiecutter, python-language-server
+idna==2.6                 # via requests
+invoke==0.22.1
+isort==4.3.3
+jedi==0.11.1              # via python-language-server
+jinja2-time==0.2.0        # via cookiecutter
+jinja2==2.10              # via cookiecutter, jinja2-time
 json-rpc==1.10.8          # via python-language-server
+markupsafe==1.0           # via jinja2
 mccabe==0.6.1             # via flake8, python-language-server
-parso==0.1.0              # via jedi
-pip-tools==1.10.1
+parso==0.1.1              # via jedi
+pip-tools==1.11.0
 pipdeptree==0.10.1
-pluggy==0.5.2             # via python-language-server
+pluggy==0.6.0             # via python-language-server
+poyo==0.4.1               # via cookiecutter
 pycodestyle==2.3.1        # via flake8, python-language-server
 pydocstyle==2.1.1         # via python-language-server
 pyflakes==1.6.0           # via flake8, python-language-server
-python-language-server==0.11.1
+python-dateutil==2.6.1    # via arrow
+python-language-server==0.13.0
+requests==2.18.4          # via cookiecutter
 rope==0.10.7              # via python-language-server
-six==1.11.0               # via pip-tools, pydocstyle
+six==1.11.0               # via pip-tools, pydocstyle, python-dateutil
 snowballstemmer==1.2.1    # via pydocstyle
-yapf==0.19.0
+urllib3==1.22             # via requests
+whichcraft==0.4.1         # via cookiecutter
+yapf==0.20.1
