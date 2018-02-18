@@ -1,15 +1,16 @@
-# Python3 development tools
+# pip-tools input requirements file.
+
+# Python development tools
+pipenv
 
 # Code formatting
 isort
 yapf
 
-# Linters and IDE
+# IDEs
 python-language-server
-flake8
 
 # Helpers
 pipdeptree
 invoke
-pip-tools
 cookiecutter
