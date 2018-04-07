@@ -1,3 +1,6 @@
 {
-  "noFFMerge": false
+  "noFFMerge": false,
+  "bugtracking": true,
+  "sendUsageStatistics": true,
+  "socketId": 0
 }
