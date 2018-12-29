@@ -1,0 +1,16 @@
+// ~/.eslintrc
+{
+    "extends": [
+        "standard",
+        "plugin:vue/recommended"
+    ],
+    "parserOptions": {
+        "parser": "babel-eslint"
+    },
+    "plugins": [
+        "html"
+    ],
+    "settings": {
+        "html/html-extensions": [".html.j2"]
+    }
+}
