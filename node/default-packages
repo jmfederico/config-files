@@ -1,0 +1,18 @@
+# ~/.nodenv/default-packages
+@vue/cli
+babel-eslint
+eslint
+eslint-config-standard
+eslint-plugin-html
+eslint-plugin-import
+eslint-plugin-node
+eslint-plugin-promise
+eslint-plugin-standard
+eslint-plugin-vue
+nodemon
+raml2html
+standard
+stylelint
+stylelint-config-recommended
+stylelint-config-standard
+stylelint-scss
