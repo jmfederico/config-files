@@ -4,13 +4,12 @@
 pipenv
 
 # Code quality and formatting
-flake8
-isort
-pycodestyle
-yapf
+pylint
 
 # IDEs
-python-language-server
+python-language-server[all]
+pyls-black
+pyls-isort
 
 # Helpers
 pipdeptree
