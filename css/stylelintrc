@@ -1,7 +1,12 @@
 # ~/.stylelintrc
 {
   "extends": "/usr/local/lib/node_modules/stylelint-config-standard",
-  "rules": {
-    "string-quotes": "single"
+  "plugins": [
+    "/usr/local/lib/node_modules/stylelint-scss"
+  ],
+  rules: {
+    "function-name-case": null,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true
   }
 }
