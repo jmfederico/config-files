@@ -11,6 +11,6 @@
         "html"
     ],
     "settings": {
-        "html/html-extensions": [".html.j2"]
+        "html/html-extensions": [".j2"]
     }
 }
