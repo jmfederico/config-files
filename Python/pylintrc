@@ -1,0 +1,9 @@
+# ~/.pylintrc
+[MASTER]
+max-line-length=119
+load-plugins=pylint_django
+init-hook="
+        import site
+        from pylint_venv import activate_venv
+        activate_venv(site)"
+disable=django-not-available
