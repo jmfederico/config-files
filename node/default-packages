@@ -1,17 +1,19 @@
 # ~/.nodenv/default-packages
+# For easy checks
+standard
+# For advanced checks
+eslint
 @vue/cli
 babel-eslint
-eslint
-eslint-config-standard
 eslint-plugin-html
+eslint-plugin-vue
+eslint-config-standard
+# Packages used by eslint-config-standard
+eslint-plugin-standard
+eslint-plugin-promise
 eslint-plugin-import
 eslint-plugin-node
-eslint-plugin-promise
-eslint-plugin-standard
-eslint-plugin-vue
-nodemon
-raml2html
-standard
+# For [s]css checks
 stylelint
 stylelint-config-recommended
 stylelint-config-standard

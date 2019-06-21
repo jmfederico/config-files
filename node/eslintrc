@@ -2,9 +2,11 @@
 {
     "extends": [
         "standard",
+        // https://vuejs.github.io/eslint-plugin-vue/user-guide/#configuration
         "plugin:vue/recommended"
     ],
     "parserOptions": {
+        // https://vuejs.github.io/eslint-plugin-vue/user-guide/#how-to-use-custom-parser
         "parser": "babel-eslint"
     },
     "plugins": [
