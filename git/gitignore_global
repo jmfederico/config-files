@@ -1,7 +1,22 @@
 # ~/.gitignore_global
 
-# Created by https://www.gitignore.io/api/macos,windows,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=macos,windows,visualstudiocode
+# Created by https://www.gitignore.io/api/macos,windows,linux
+# Edit at https://www.gitignore.io/?templates=macos,windows,linux
+
+### Linux ###
+*~
+
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
 
 ### macOS ###
 # General
@@ -31,17 +46,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -67,13 +71,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/macos,windows,visualstudiocode
-
-# Custom ignores
-
-# dpl command
-.dpl
-
-# project development storage
-.dev/
-.dev.*
+# End of https://www.gitignore.io/api/macos,windows,linux
