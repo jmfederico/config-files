@@ -1,20 +1,18 @@
 # ~/.nodenv/default-packages
-# For easy checks
-standard
-# For advanced checks
-eslint
+
+npx
 @vue/cli
+
+# Formatter
+prettier
+
+# Javascript
+eslint
+eslint-config-prettier
+eslint-plugin-prettier
 babel-eslint
-eslint-plugin-html
-eslint-plugin-vue
-eslint-config-standard
-# Packages used by eslint-config-standard
-eslint-plugin-standard
-eslint-plugin-promise
-eslint-plugin-import
-eslint-plugin-node
-# For [s]css checks
+
+# [s]css
 stylelint
-stylelint-config-recommended
-stylelint-config-standard
-stylelint-scss
+stylelint-config-prettier
+stylelint-prettier
