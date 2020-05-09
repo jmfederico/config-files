@@ -4,4 +4,6 @@
 ignore = E203, E501, W503
 max-line-length = 80
 max-complexity = 18
-select = B,C,D,E,F,H,T,W,B9
+per-file-ignores =
+    */__init__.py:F401,F403
+select = B,C,D,E,F,H,I,T,W,B9
