@@ -3,7 +3,6 @@
 max-line-length=88
 load-plugins=pylint_django
 init-hook="
-        import site
-        from pylint_venv import activate_venv
-        activate_venv(site)"
-disable=django-not-available,bad-continuation
+    from pylint_venv import inithook
+    inithook()"
+disable=django-not-available,bad-continuation,too-many-ancestors,too-few-public-methods
