@@ -1,4 +1,5 @@
 # ~/.pylintrc
+# pylint_venv pylint_django
 [MASTER]
 max-line-length=88
 load-plugins=pylint_django
