@@ -7,7 +7,7 @@ max-line-length = 80
 max-complexity = 18
 per-file-ignores =
     */__init__.py:F401,F403
-select = B,C,D,E,F,H,I,T,U100,W,B9
+select = B,C,D,E,F,H,T,U100,W,B9
 unused-arguments-ignore-variadic-names = true
 unused-arguments-ignore-stub-functions = true
 unused-arguments-ignore-abstract-functions = true
