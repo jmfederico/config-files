@@ -43,3 +43,4 @@ zmodule homebrew
 zmodule docker/cli -n docker -f contrib/completion/zsh/
 zmodule docker/compose -n docker-compose -f contrib/completion/zsh/
 zmodule sorin-ionescu/prezto -s modules/docker/alias.zsh
+zmodule romkatv/powerlevel10k
