@@ -133,13 +133,6 @@ bindkey -M vicmd 'j' history-substring-search-down
 # Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
 
-# Expand PATH.
-path=(
-  $HOME/.local/bin
-  /usr/local/{bin,sbin}
-  $path
-)
-
 # Load local options.
 if [ -f ~/.zshrc.local ]; then
     source ~/.zshrc.local
