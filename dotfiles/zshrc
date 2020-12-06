@@ -138,5 +138,20 @@ if [ -f ~/.zshrc.local ]; then
     source ~/.zshrc.local
 fi
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+if [[ -f ~/.p10k.zsh ]]; then
+  # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+  source ~/.p10k.zsh
+
+  # P10K does not have an easy way to Hide PYENV when a VENV is active,
+  # it has an option to do the oposite, which I do not want.
+  # Here I hide the PYENV prmpt if a VENV is active.
+  eval "`declare -f prompt_pyenv | sed '1s/.*/_&/'`" #backup old prompt_pyenv to _prompt_pyenv
+  prompt_pyenv() {
+      local v=${VIRTUAL_ENV:t}
+      if [[  -z  $v  ]]; then
+          _prompt_pyenv "$@"
+      fi
+  }
+fi
