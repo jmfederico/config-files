@@ -138,7 +138,14 @@ if [ -f ~/.zshrc.local ]; then
     source ~/.zshrc.local
 fi
 
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Custom alias section
+Gbp() {
+  git fetch -p
+  git branch -vv | egrep '^[^\*].+: gone' | awk '{print $1}' | xargs git branch -D
+}
+# Since I use rebas as default pull strategy, Gfm needs to explicitly ask for merge strategy to be used.
+alias Gfm='git pull --rebase=false'
+
 
 if [[ -f ~/.p10k.zsh ]]; then
   # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
