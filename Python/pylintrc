@@ -2,8 +2,8 @@
 # pylint_venv pylint_django
 [MASTER]
 max-line-length=88
-load-plugins=pylint_django
-init-hook="
-    from pylint_venv import inithook
-    inithook()"
-disable=django-not-available,bad-continuation,too-many-ancestors,too-few-public-methods
+init-hook=
+    try: import pylint_venv
+    except ImportError: pass
+    else: pylint_venv.inithook(force_venv_activation=True)
+disable=bad-continuation,too-many-ancestors,too-few-public-methods
